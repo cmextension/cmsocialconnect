@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>com_cmsocialconnect</name>
+	<version>1.0.0</version>
+	<copyright>(C) 2015 CMExtension team</copyright>
+	<author>CMExtension team</author>
+	<authorEmail>cmext.vn@gmail.com</authorEmail>
+	<authorUrl>www.cmext.vn</authorUrl>
+	<license>GNU General Public License version 2 or later</license>
+	<creationDate>April 22, 2015</creationDate>
+	<description>COM_CMSOCIALCONNECT_XML_DESCRIPTION</description>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<files folder="site">
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>language</folder>
+		<folder>layouts</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<filename>cmsocialconnect.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+	</files>
+
+	<administration>
+		<menu img="class:component">com_cmsocialconnect</menu>
+
+		<files folder="admin">
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>language</folder>
+			<folder>layouts</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>access.xml</filename>
+			<filename>cmsocialconnect.php</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+		</files>
+	</administration>
+</extension>

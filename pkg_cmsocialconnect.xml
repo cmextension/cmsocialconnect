@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.0">
+	<name>CM Social Connect package</name>
+	<description>A set of Joomla! component, modules and plugins to provide ability to register and login via social networks.</description>
+	<version>1.0.0</version>
+	<author>CMExtension team</author>
+	<authorEmail>cmext.vn@gmail.com</authorEmail>
+	<authorUrl>www.cmext.vn</authorUrl>
+	<creationDate>April 22, 2015</creationDate>
+	<copyright>(C) 2015 CMExtension team</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<packagename>cmsocialconnect</packagename>
+	<url>http://www.cmext.vn/</url>
+	<packager>CMExtension team</packager>
+	<packagerurl>http://www.cmext.vn/</packagerurl>
+	<updateservers>
+		<server type="extension" priority="1" name="CM Social Connect package">http://www.cmext.vn/joomla/extensions/update/pkg_cmsocialconnect.xml</server>
+	</updateservers>
+	<files folder="packages">
+		<folder type="component" id="com_cmsocialconnect">com_cmsocialconnect</folder>
+		<folder type="plugin" id="plg_user_cmsocialconnect" group="user">plg_user_cmsocialconnect</folder>
+		<folder type="plugin" id="plg_system_cmsocialconnect" group="system">plg_system_cmsocialconnect</folder>
+		<folder type="plugin" id="plg_cmsocialconnect_facebook" group="cmsocialconnect">plg_cmsocialconnect_facebook</folder>
+		<folder type="plugin" id="plg_cmsocialconnect_twitter" group="cmsocialconnect">plg_cmsocialconnect_twitter</folder>
+		<folder type="plugin" id="plg_cmsocialconnect_googleplus" group="cmsocialconnect">plg_cmsocialconnect_googleplus</folder>
+		<folder type="module" id="mod_cmsocialconnect_login">mod_cmsocialconnect_login</folder>
+	</files>
+</extension>

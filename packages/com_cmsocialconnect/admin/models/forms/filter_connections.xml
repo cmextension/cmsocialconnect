@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field name="user_id" type="user" />
+
+		<field name="network_id" type="cmscnetwork" onchange="this.form.submit();">
+			<option value="">COM_CMSOCIALCONNECT_SELECT_A_SOCIAL_NETWORK</option>
+		</field>
+	</fields>
+
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="JGLOBAL_SORT_BY"
+			statuses="*,0,1,2,-2"
+			description="JGLOBAL_SORT_BY"
+			onchange="this.form.submit();"
+			default="a.name ASC"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="user_name ASC">COM_CMSOCIALCONNECT_SORT_USER_NAME_ASC</option>
+			<option value="user_name DESC">COM_CMSOCIALCONNECT_SORT_USER_NAME_DESC</option>
+			<option value="a.network_id ASC">COM_CMSOCIALCONNECT_SORT_NETWORK_ID_ASC</option>
+			<option value="a.network_id DESC">COM_CMSOCIALCONNECT_SORT_NETWORK_ID_DESC</option>
+			<option value="a.connected_date ASC">COM_CMSOCIALCONNECT_SORT_CONNECTED_DATE_ASC</option>
+			<option value="a.connected_date DESC">COM_CMSOCIALCONNECT_SORT_CONNECTED_DATE_DESC</option>
+			<option value="a.last_login_date ASC">COM_CMSOCIALCONNECT_SORT_LAST_LOGIN_DATE_ASC</option>
+			<option value="a.last_login_date DESC">COM_CMSOCIALCONNECT_SORT_LAST_LOGIN_DATE_DESC</option>
+			<option value="a.id ASC">JGRID_HEADING_ID_ASC</option>
+			<option value="a.id DESC">JGRID_HEADING_ID_DESC</option>
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="input-mini"
+			default="25"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

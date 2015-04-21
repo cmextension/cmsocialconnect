@@ -1,0 +1,34 @@
+.cmsocialconnect .cmsc-button,
+.cmsocialconnect .cmsc-button:hover {
+	background-image: none !important;
+	color: #ffffff !important;
+	text-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.cmsocialconnect .cmsc-facebook {
+	background-color: #3b5998 !important;
+	border-color: #5c92c7 !important;
+}
+
+.cmsocialconnect .cmsc-facebook:hover {
+	background-color: #1f4f7e !important;
+}
+
+.cmsocialconnect .cmsc-twitter {
+	background-color: #55acee !important;
+	border-color: #4586b7 !important;
+}
+
+.cmsocialconnect .cmsc-twitter:hover {
+	background-color: #4a8fc4 !important;
+}
+
+.cmsocialconnect .cmsc-google-plus {
+	background-color: #d34836 !important;
+	border-color: #933226 !important;
+}
+
+.cmsocialconnect .cmsc-google-plus:hover {
+	background-color: #a6392a !important;
+}

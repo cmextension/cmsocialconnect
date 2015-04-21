@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="basic"
+		label="COM_CMSOCIALCONNECT_CONFIG_FIELD_BASIC_LABEL"
+		description="COM_CMSOCIALCONNECT_CONFIG_FIELD_BASIC_DESC">
+
+		<field name="load_fontawesome" type="radio" default="1"
+			label="COM_CMSOCIALCONNECT_CONFIG_FIELD_LOAD_FONTAWESOME_LABEL"
+			description="COM_CMSOCIALCONNECT_CONFIG_FIELD_LOAD_FONTAWESOME_DESC">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+		</field>
+
+		<field name="load_css" type="radio" default="1"
+			label="COM_CMSOCIALCONNECT_CONFIG_FIELD_LOAD_CSS_LABEL"
+			description="COM_CMSOCIALCONNECT_CONFIG_FIELD_LOAD_CSS_DESC">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+		</field>
+
+		<field name="show_in_profile" type="radio" default="1"
+			label="COM_CMSOCIALCONNECT_CONFIG_FIELD_SHOW_IN_PROFILE_LABEL"
+			description="COM_CMSOCIALCONNECT_CONFIG_FIELD_SHOW_IN_PROFILE_DESC">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+		</field>
+
+	</fieldset>
+
+	<fieldset name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC">
+
+		<field name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			validate="rules"
+			filter="rules"
+			component="com_cmsocialconnect"
+			section="component" />
+
+	</fieldset>
+</config>
