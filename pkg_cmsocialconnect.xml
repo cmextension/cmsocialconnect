@@ -2,7 +2,7 @@
 <extension type="package" version="3.0">
 	<name>CM Social Connect package</name>
 	<description>A set of Joomla! component, modules and plugins to provide ability to register and login via social networks.</description>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<author>CMExtension team</author>
 	<authorEmail>cmext.vn@gmail.com</authorEmail>
 	<authorUrl>www.cmext.vn</authorUrl>
