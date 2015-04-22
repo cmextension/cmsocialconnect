@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.0" type="plugin" group="cmsocialconnect" method="upgrade">
 	<name>plg_cmsocialconnect_facebook</name>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<author>CMExtension team</author>
 	<authorEmail>cmext.vn@gmail.com</authorEmail>
 	<authorUrl>www.cmext.vn</authorUrl>

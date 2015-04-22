@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.0" client="site" method="upgrade">
 	<name>mod_cmsocialconnect_login</name>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<copyright>(C) 2015 CMExtension team</copyright>
 	<author>CMExtension team</author>
 	<authorEmail>cmext.vn@gmail.com</authorEmail>
