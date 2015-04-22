@@ -18,7 +18,7 @@ defined('_JEXEC') or die;
 <?php endif;?>
 	<legend>CM Social Connect</legend>
 	<ul>
-		<li><strong>Version</strong>: 1.0.0</li>
+		<li><strong>Version</strong>: 1.0.1</li>
 		<li><strong>Released</strong>: April 22, 2015</li>
 		<li><strong>Author</strong>: <a href="http://www.cmext.vn/" target="_blank">CMExtension team</a></li>
 		<li><strong>License</strong>: <a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank">GNU General Public License version 2</a> (or, at your option, any later version)</li>
