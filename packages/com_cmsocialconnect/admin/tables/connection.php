@@ -15,7 +15,7 @@ defined('_JEXEC') or die;
  * @subpackage  com_cmsocialconnect
  * @since       1.0.0
  */
-class CMSocialNetworkTableConnection extends JTable
+class CMSocialConnectTableConnection extends JTable
 {
 	/**
 	 * Constructor.

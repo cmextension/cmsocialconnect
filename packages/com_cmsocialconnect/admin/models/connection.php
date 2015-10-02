@@ -15,7 +15,7 @@ defined('_JEXEC') or die;
  * @subpackage  com_cmsocialconnect
  * @since       1.0.0
  */
-class CMSocialConnectionModelConnection extends JModelAdmin
+class CMSocialConnectModelConnection extends JModelAdmin
 {
 	/**
 	 * Method to get a table object, load it if necessary.
@@ -28,7 +28,7 @@ class CMSocialConnectionModelConnection extends JModelAdmin
 	 *
 	 * @since   1.0.0
 	 */
-	public function getTable($type = 'Connection', $prefix = 'CMSocialConnectionTable', $config = array())
+	public function getTable($type = 'Connection', $prefix = 'CMSocialConnectTable', $config = array())
 	{
 		return JTable::getInstance($type, $prefix, $config);
 	}

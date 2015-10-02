@@ -15,8 +15,15 @@ defined('_JEXEC') or die;
  * @subpackage  com_cmsocialconnect
  * @since       1.0.0
  */
-class CMSocialConnectionControllerConnections extends JControllerAdmin
+class CMSocialConnectControllerConnections extends JControllerAdmin
 {
+	/**
+	 * @var     string  The prefix to use with controller messages.
+	 *
+	 * @since   1.1.0
+	 */
+	protected $text_prefix = 'COM_CMSOCIALCONNECT_CONNECTIONS';
+
 	/**
 	 * Proxy for getModel.
 	 *
@@ -28,7 +35,7 @@ class CMSocialConnectionControllerConnections extends JControllerAdmin
 	 *
 	 * @since   1.0.0
 	 */
-	public function getModel($name = 'Connection', $prefix = 'CMSocialConnectionModel', $config = array('ignore_request' => true))
+	public function getModel($name = 'Connection', $prefix = 'CMSocialConnectModel', $config = array('ignore_request' => true))
 	{
 		$model = parent::getModel($name, $prefix, $config);
 

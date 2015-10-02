@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.0" type="plugin" group="cmsocialconnect" method="upgrade">
 	<name>plg_cmsocialconnect_facebook</name>
-	<version>1.0.1</version>
+	<version>1.1.0</version>
+	<copyright>(C) 2015 CMExtension team</copyright>
 	<author>CMExtension team</author>
 	<authorEmail>cmext.vn@gmail.com</authorEmail>
 	<authorUrl>www.cmext.vn</authorUrl>
-	<creationDate>April 22, 2015</creationDate>
-	<copyright>(C) 2015 CMExtension team</copyright>
 	<license>GNU General Public License version 2 or later</license>
+	<creationDate>October, 2015</creationDate>
 	<description>PLG_CMSOCIALCONNECT_FACEBOOK_XML_DESCRIPTION</description>
 
 	<files>

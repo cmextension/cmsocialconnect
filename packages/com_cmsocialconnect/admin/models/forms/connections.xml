@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset addfieldpath="/administrator/components/com_cmsocialconnect/models/fields">
+		<field name="filter_user_id" type="user" />
+
+		<field name="filter_network_id" type="cmscnetwork" />
+	</fieldset>
+</form>

@@ -33,7 +33,7 @@ class CMSocialConnectControllerConnection extends JControllerForm
 
 		if ($task == 'save')
 		{
-			$this->setRedirect(JRoute::_('index.php?option=com_cmsocialconnection&view=connection', false));
+			$this->setRedirect(JRoute::_('index.php?option=com_CMSocialConnect&view=connection', false));
 		}
 	}
 }
