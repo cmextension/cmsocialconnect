@@ -227,7 +227,6 @@ class PlgUserCMSocialConnect extends JPlugin
 			$query = $db->getQuery(true);
 
 			// Compile the notification mail values.
-			$data = $user->getProperties();
 			$data['fromname'] = $config->get('fromname');
 			$data['mailfrom'] = $config->get('mailfrom');
 			$data['sitename'] = $config->get('sitename');
@@ -509,8 +508,17 @@ class PlgUserCMSocialConnect extends JPlugin
 					return false;
 				}
 
-				// Log user in if account is activated.
-				if ($user->getParam('activate', 1))
+				if ($useractivation == 1)
+				{
+					$app->enqueueMessage(JText::_('COM_USERS_REGISTRATION_COMPLETE_VERIFY'));
+					$app->redirect(JRoute::_('index.php?option=com_users&view=registration&layout=complete', false));
+				}
+				elseif ($useractivation == 2)
+				{
+					$app->enqueueMessage(JText::_('COM_USERS_REGISTRATION_COMPLETE_ACTIVATE'));
+					$app->redirect(JRoute::_('index.php?option=com_users&view=registration&layout=complete', false));
+				}
+				else
 				{
 					$options = array('action' => 'core.login.site');
 
@@ -531,11 +539,9 @@ class PlgUserCMSocialConnect extends JPlugin
 						$app->setUserState('com_cmsocialconnect.register.data', null);
 
 						CMSocialConnectHelper::updateLastLogin($userId, $socialNetworkId, $socialNetworkUserId);
-
-						// After logging user in we need to redirect to a different page,
-						// return true will cause error.
-						$app->redirect('index.php');
 					}
+
+					$app->redirect('index.php');
 				}
 			}
 		}
