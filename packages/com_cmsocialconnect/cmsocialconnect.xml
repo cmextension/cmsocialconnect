@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="3.0" method="upgrade">
 	<name>com_cmsocialconnect</name>
-	<version>1.1.0</version>
+	<version>1.1.1</version>
 	<copyright>(C) 2015 CMExtension team</copyright>
 	<author>CMExtension team</author>
 	<authorEmail>cmext.vn@gmail.com</authorEmail>
 	<authorUrl>www.cmext.vn</authorUrl>
 	<license>GNU General Public License version 2 or later</license>
-	<creationDate>October, 2015</creationDate>
+	<creationDate>October 29, 2015</creationDate>
 	<description>COM_CMSOCIALCONNECT_XML_DESCRIPTION</description>
 
 	<install>

@@ -426,7 +426,7 @@ class PlgCMSocialConnectFacebook extends JPlugin
 		// Take the user information from facebook.
 		$jFacebookUser = $jFacebook->user;
 
-		$fbUser = $jFacebookUser->get('me');
+		$fbUser = $jFacebookUser->get('me?fields=id,name,email');
 
 		return $fbUser;
 	}
